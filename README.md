@@ -5,3 +5,7 @@
 - create README.md
 - zh-hans;Asia/Shanghai
 - python manage.py startapp blog
+- python manage.py makemigrations
+# 基本信息
+- username：xiaofang
+- password：lkjhgfdsa
