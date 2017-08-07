@@ -3,3 +3,5 @@
 # log
 - django-admin startproject blogproject
 - create README.md
+- zh-hans;Asia/Shanghai
+- python manage.py startapp blog
