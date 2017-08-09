@@ -4,4 +4,7 @@ from django.http import HttpResponse
 
 
 def index(request):
-    return HttpResponse('welcome')
+    return render(request, 'blog/index.html', context={
+        'title': 'my blog',
+        'welcome': 'bingo'
+    })
