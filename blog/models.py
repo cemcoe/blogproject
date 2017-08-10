@@ -1,8 +1,6 @@
-from __future__ import unicode_literals
-from django.contrib.auth.models import User
 from django.db import models
-
-# Create your models here.
+from django.contrib.auth.models import User
+from django.urls import reverse
 
 
 class Category(models.Model):
@@ -22,4 +20,11 @@ class Post(models.Model):
     category = models.ForeignKey(Category)
     tags = models.ManyToManyField(Tag, blank=True)
     author = models.ForeignKey(User)
+
+    def __str__(self):
+        return self.title
+
+    def get_absolute_url(self):
+        return reverse('blog:detail', kwargs={'pk': self.pk})
+
 
