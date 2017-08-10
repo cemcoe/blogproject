@@ -1,5 +1,5 @@
 # python django web practice
-# 按教程[此教程](http://zmrenwu.com/)的实践
+# 按追梦人物的[教程](http://zmrenwu.com/)的实践
 # python code list
 - django-admin startproject blogproject（创建项目）
 - python manage.py runserver（启动）
